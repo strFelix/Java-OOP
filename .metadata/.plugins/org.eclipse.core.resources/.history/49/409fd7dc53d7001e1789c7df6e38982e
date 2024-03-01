@@ -1,0 +1,21 @@
+package br.com.samsung.models;
+
+public class Celular extends Aparelho {
+	private Double LarguraTela;
+	private Double AlturaTela;
+	
+	public Double getLarguraTela() {
+		return LarguraTela;
+	}
+	public void setLarguraTela(Double larguraTela) {
+		LarguraTela = larguraTela;
+	}
+	public Double getAlturaTela() {
+		return AlturaTela;
+	}
+	public void setAlturaTela(Double alturaTela) {
+		AlturaTela = alturaTela;
+	}
+	
+
+}

@@ -1,0 +1,13 @@
+package br.com.construtora.models;
+
+public class Casa {
+	private double MetrosQuadradosGaragem;
+
+	public double getMetrosQuadradosGaragem() {
+		return MetrosQuadradosGaragem;
+	}
+
+	public void setMetrosQuadradosGaragem(double metrosQuadradosGaragem) {
+		MetrosQuadradosGaragem = metrosQuadradosGaragem;
+	}	
+}

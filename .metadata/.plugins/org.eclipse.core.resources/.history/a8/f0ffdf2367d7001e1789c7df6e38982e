@@ -1,0 +1,27 @@
+package br.com.construtora.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.construtora.models.Apartamento;
+import br.com.construtora.models.Casa;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		Apartamento apartamento = new Apartamento();
+		Casa casa = new Casa();
+		
+		apartamento.setNome(JOptionPane.showInputDialog("Nome do apartamento: "));
+		apartamento.setMetrosQuadrados(Double.parseDouble(JOptionPane.showInputDialog("Metros quadrados: ")));
+		apartamento.setQuantidadeQuartos(Integer.parseInt(JOptionPane.showInputDialog("Qunatidade de quartos: ")));
+		apartamento.setQuantidadeVarandas(Integer.parseInt(JOptionPane.showInputDialog("Qunatidade de varandas: ")));
+
+		System.out.println(String.format("Apartamento: Nome: %s /nM²: %f /nQuartos: %d /nVarandas: %d", apartamento.getNome(), apartamento.getMetrosQuadrados(), apartamento.getQuantidadeQuartos(), apartamento.getQuantidadeVarandas()));
+		
+		casa.setNome(JOptionPane.showInputDialog("Nome do apartamento: "));
+		casa.setMetrosQuadrados(Double.parseDouble(JOptionPane.showInputDialog("Metros quadrados: ")));
+		casa.setQuantidadeQuartos(Integer.parseInt(JOptionPane.showInputDialog("Qunatidade de quartos: ")));
+		casa.setMetrosQuadradosGaragem(Integer.parseInt(JOptionPane.showInputDialog("Qunatidade de metros da garagem: ")));	
+	}
+}

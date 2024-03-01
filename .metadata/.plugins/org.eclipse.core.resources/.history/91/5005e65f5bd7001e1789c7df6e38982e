@@ -1,0 +1,29 @@
+package br.com.samsung.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.samsung.models.Celular;
+import br.com.samsung.models.LinhaBranca;
+
+public class TesteDois {
+
+	public static void main(String[] args) {
+		System.out.println("1 - Linha Branca | 2 - Celular");
+		int choice = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma opção:"));
+		
+		switch(choice){
+			case 1:
+				Celular novoCeluar = new Celular();
+				
+				novoCeluar.setNome(JOptionPane.showInputDialog("Nome do celular: "));
+				novoCeluar.setPeso(Double.parseDouble(JOptionPane.showInputDialog("Peso do celular: ")));
+				novoCeluar.setLarguraTela(Double.parseDouble(JOptionPane.showInputDialog("Largura do celular: ")));
+				novoCeluar.setAlturaTela(Double.parseDouble(JOptionPane.showInputDialog("Altura do celular: ")));
+				System.out.println(String.format("Celular: %s, %.1f, %.1f, %.1f", novoCeluar.getNome(), novoCeluar.getPeso(), novoCeluar.getLarguraTela(), novoCeluar.getAlturaTela()));
+				break;
+		
+		}
+			
+	}
+
+}
