@@ -1,14 +1,16 @@
 package model;
 
-public class Endereco {
+public class EnderecoLucasFelix {
 
-	private int cpf;
-	public int getCpf() {
-		return cpf;
+	private int cnpjLucasFelix;
+	
+
+	public int getCnpj() {
+		return cnpjLucasFelix;
 	}
 
-	public void setCpf(int cpf) {
-		this.cpf = cpf;
+	public void setCnpj(int cnpj) {
+		this.cnpjLucasFelix = cnpj;
 	}
 
 	private String cep;
